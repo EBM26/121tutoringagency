@@ -12,7 +12,7 @@
   --font-display: "Archivo", "Arial Narrow", Arial, sans-serif;
   --font-body: "Atkinson Hyperlegible", Verdana, "Segoe UI", sans-serif;
 
-  --wrap: 1120px;
+  --wrap: 1260px;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
   --section: clamp(4rem, 9vw, 7rem);
 }
