@@ -39,7 +39,6 @@ document.querySelectorAll(".year").forEach(function (el) {
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    if (form._honey.value) return; // bot filled the hidden field
 
     button.disabled = true;
     button.textContent = "Sending…";
