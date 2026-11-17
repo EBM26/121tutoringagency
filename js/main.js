@@ -35,7 +35,7 @@ document.querySelectorAll(".year").forEach(function (el) {
 
   var status = form.querySelector(".form-status");
   var button = form.querySelector("button[type=submit]");
-  var endpoint = form.action.replace("formsubmit.co/", "formsubmit.co/ajax/");
+  var endpoint = form.action;
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -55,7 +55,7 @@ document.querySelectorAll(".year").forEach(function (el) {
     })
       .then(function (res) {
         return res.json().then(function (json) {
-          if (!res.ok || String(json.success) !== "true") throw new Error(json.message || "Send failed");
+          if (!res.ok || !json.success) throw new Error(json.message || "Send failed");
         });
       })
       .then(function () {
