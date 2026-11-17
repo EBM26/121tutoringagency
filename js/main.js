@@ -39,7 +39,7 @@ document.querySelectorAll(".year").forEach(function (el) {
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    console.log("form submitted with ");
+    console.log("form submitted with Dan's email");
     button.disabled = true;
     button.textContent = "Sending…";
     status.textContent = "";
