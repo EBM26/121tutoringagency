@@ -39,7 +39,7 @@ document.querySelectorAll(".year").forEach(function (el) {
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    console.log("form submitted");
+    console.log("form submitted with ");
     button.disabled = true;
     button.textContent = "Sending…";
     status.textContent = "";
